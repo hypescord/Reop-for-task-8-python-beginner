@@ -1,0 +1,45 @@
+<!--
+	Author: W3layouts
+	Author URL: http://w3layouts.com
+	License: Creative Commons Attribution 3.0 Unported
+	License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+{%extends 'home/index.html'%}
+{%load crispy_forms_tags%}
+
+
+	{%block body%}
+
+	<!--/banner-->
+	<div class="banner-inner">
+	</div>
+	<ol class="breadcrumb">
+		<li class="breadcrumb-item">
+			<a href="index.html">Home</a>
+		</li>
+		<li class="breadcrumb-item active">Sign in</li>
+	</ol>
+	<!--//banner-->
+	<!--/main-->
+	<section class="main-content-w3layouts-agileits">
+		<div class="container">
+				<h3 class="tittle">Sign In Now</h3>
+				<div class="row inner-sec">
+					<div class="login p-5 bg-light mx-auto mw-100">
+					<form action="#" method="post">
+						{% csrf_token %}
+						{{form|crispy}}
+							<div>
+								<button type="submit" class="btn btn-primary submit">Login</button>
+							</div>
+					</form>
+
+					</div>
+				</div>
+		</div>
+	</section>
+	<!--//main-->
+
+	{%endblock body%}
+	

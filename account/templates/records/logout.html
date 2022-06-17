@@ -1,0 +1,13 @@
+{%extends 'home/index.html'%}
+
+{%block body%}
+<div style="margin: 50px:">
+    <div class="container">
+        <p>You're logged out!</p>
+            <p>Click the <b>link</b>below to log in</p>
+        <div>
+            <a href="{%url 'records:checkdetailsview'%}">Login</a>
+        </div>
+    </div>
+</div>
+{%endblock body%}
