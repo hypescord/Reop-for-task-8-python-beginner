@@ -24,5 +24,6 @@ urlpatterns = [
     path('check-customer-details/', checkdetails, name='checkdetailsview'),
     path('customer-records/', customer, name='customerview'),
     path('register-records/', register, name='registerview'),
-    path('logout/', auth_views.LogoutView.as_view(template_name='account/logout.html'), name='logoutview')
+    path('logout/', auth_views.LogoutView.as_view(template_name='account/logout.html'), name='logoutview'),
+    path('register-records/register', register)
 ]

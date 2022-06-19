@@ -15,49 +15,44 @@
 			<h3 class="tittle">Register New Customer</h3>
 				<div class="inner-sec">
 			<div class="login p-5 bg-light mx-auto mw-100">
-				<form action="#" method="post">
+				<form action="register" method="post">
 					{%csrf_token%}
 
 								<div class="col-md-6 mb-3">
 										<label for="Ocuupant_name">Occupant name</label>
-									<input type="text" class="form-control" id="Occupant_name" placeholder="" required="">
+									<input type="text" class="form-control" id="Occupant_name" name="Occupant_name" placeholder="" required="">
 								</div>
 								<div class="col-md-6 mb-3">
 										<label for="Occupant_email">Occupant email</label>
-									<input type="email" class="form-control" id="Occupant_email" placeholder="" required="">
+									<input type="email" class="form-control" id="Occupant_email" name="Occupant_email" placeholder="" required="">
 								</div>
 								<div class="col-md-6 mb-3">
 										<label for="Occupant_occupation">Occupant occupation</label>
-									<input type="text" class="form-control" id="Occupant_occupation" placeholder="" required="">
+									<input type="text" class="form-control" id="Occupant_occupation" name="Occupant_occupation" placeholder="" required="">
 								</div>
 						
 						
 								<div class="col-md-6 mb-1">
 										<label for="Room_number">Room number</label>
-									<input type="number" class="form-control" id="Room_number" placeholder="000" required="">
+									<input type="number" class="form-control" id="Room_number" name="Room_number" placeholder="000" required="">
 								</div>
 								<div class="col-md-6 mb-3">
 										<label for="Amount_paid">Amount paid</label>
-									<input type="number" class="form-control" id="Amount_paid" placeholder="Any currency" required="">
+									<input type="number" class="form-control" id="Amount_paid" name="Amount_paid" placeholder="Any currency" required="">
 								</div>
 								<div class="col-md-6 mb-3">
 										<label for="Num_of_nights">Num of nights</label>
-									<input type="number" class="form-control" id="Num_of_nights" placeholder="1" required="">
+									<input type="number" class="form-control" id="Num_of_nights" name="Num_of_nights" placeholder="1" required="">
 								</div>
 						
 							<div class="col-md-3 mb-3">
 									<label for="Start_date">Start date</label>
-								<input type="date" class="form-control" id="Start_date" placeholder="" required="">
+								<input type="date" class="form-control" id="Start_date" name="Start_date" placeholder="" required="">
 							</div>
 							<div class="col-md-3 mb-3">
 									<label for="End_date">End date</label>
-								<input type="date" class="form-control" id="password2" placeholder="" required="">
-								<p>   
-									
-									.........................
-									
-								</p>
-					
+								<input type="date" class="form-control" id="End_date" name="End_date" placeholder="" required="">
+							</div><br>
 							<button type="submit" class="btn btn-primary submit mb-4">Add Customer</button>
 								<p>
 									<a href="#">This means the customer agrees to our terms of service</a>

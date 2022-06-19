@@ -14,7 +14,7 @@ class Record(models.Model):
     Num_of_nights = models.IntegerField()
     Start_date = models.DateField()   
     End_date = models.DateField() 
-    Customer = models.ForeignKey(Customer, on_delete=models.CASCADE, null=True, default=1)
+    customer = models.ForeignKey(Customer, on_delete=models.CASCADE, null=False)
     def __str__(self):
-        return f'Record for {self.Customer}, {self.End_date}'
+        return f'Record for {self.customer}, {self.End_date}'
     
